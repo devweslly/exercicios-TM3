@@ -1,3 +1,3 @@
 fun main() {
-    parImpar()
+    mediaMult3()
 }
