@@ -2,35 +2,29 @@ import POO.Cliente
 import POO.Cliente2
 
 fun main() {
-    /*
-    val wes = Cliente(
-        nome = "weslly",
-        idade = 30,
-        cpf = "111.111.111-11",
-        saldo = 2000.0
-    )
 
-    println("Nome: ${wes.nome}")
-    println("Idade: ${wes.idade}")
-    println("CPF: ${wes.cpf}")
+    //Estrutura do try...catch - Fazer o Tratamento de Erros dentro do nosso código
+    try {
+        val julia = Cliente2(nome = "", idade = 22, saldo = 10000.0)
 
-    wes.mostraSaldo()
-    wes.comprar(100)
-    wes.mostraSaldo()
-    */
+        julia.mostraInfo()
+        println("---------------------------------")
+        julia.addItemCompra("Camisa")
+        println("---------------------------------")
+        julia.addItemCompra("Meia")
+        println("---------------------------------")
+        julia.addItemCompra("Tenis")
+        println("---------------------------------")
+        julia.addItemCompra("Livro")
+        println("---------------------------------")
+        julia.removeItemCompra("Tenis")
+        println("---------------------------------")
+        println("ITEM ERRADO")
+        julia.removeItemCompra("Calça")
+        println("---------------------------------")
+        julia.mostraListaCompra()
+    } catch (e: Exception) {
+        println(e.message)
+    }
 
-    /*
-    val aviao = Aviao()
-    aviao.passageiros = 200
-    println("Número de passageiros: ${aviao.passageiros}")
-    aviao.assentos(150)
-    */
-
-    var julia = Cliente2(nome ="Julia", idade = 22, saldo = 10000.0)
-
-    println(julia.nome)
-    println(julia.idade)
-    println(julia.saldo)
-
-    julia.mostraInfo()
 }
