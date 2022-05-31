@@ -1,30 +1,20 @@
-import POO.Cliente
 import POO.Cliente2
+import herancaPOO.Mel
+import herancaPOO.Spirit
+import testCalculadora.Calculadora
 
 fun main() {
-
-    //Estrutura do try...catch - Fazer o Tratamento de Erros dentro do nosso código
-    try {
-        val julia = Cliente2(nome = "", idade = 22, saldo = 10000.0)
-
-        julia.mostraInfo()
-        println("---------------------------------")
-        julia.addItemCompra("Camisa")
-        println("---------------------------------")
-        julia.addItemCompra("Meia")
-        println("---------------------------------")
-        julia.addItemCompra("Tenis")
-        println("---------------------------------")
-        julia.addItemCompra("Livro")
-        println("---------------------------------")
-        julia.removeItemCompra("Tenis")
-        println("---------------------------------")
-        println("ITEM ERRADO")
-        julia.removeItemCompra("Calça")
-        println("---------------------------------")
-        julia.mostraListaCompra()
-    } catch (e: Exception) {
-        println(e.message)
-    }
+    Calculadora.soma(2.0, 3.0)
+    println("*****************")
+    Calculadora.sub(2.0, 3.0)
+    println("*****************")
+    Calculadora.mult(2.0, 3.0)
+    println("*****************")
+    Calculadora.divisao(2.0, 3.0)
+    println("*****************")
+    Calculadora.raiz(2.0, 3.0)
+    println("*****************")
+    Calculadora.pot(2.0, 3.0)
+    println("*****************")
 
 }

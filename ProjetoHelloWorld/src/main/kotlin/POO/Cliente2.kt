@@ -24,8 +24,8 @@ class Cliente2(private var nome: String, private var idade: Int, private var sal
         this.listaDeCompra = listaDeCompra
     }
 
-    //Exceção - Medida que o programa utiliza caso alguma regra seja descumprida
-    //que leva o programa a ser finalizado
+    //Exceção - Medida que o programa utiliza caso alguma regra
+    // seja descumprida, que leva o programa a ser finalizado
     init {
         if (nome == ""){
             throw Exception("A classe foi instanciada de maneira incorreta.")
