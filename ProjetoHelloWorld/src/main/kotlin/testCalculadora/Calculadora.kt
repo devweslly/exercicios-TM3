@@ -7,9 +7,10 @@ class Calculadora() {
 
     // Companion Object - Atributos e métodos sem precisar instanciar uma classe
     companion object {
-        fun soma(n1: Double, n2: Double) {
-            val soma = n1 + n2
-            println("$n1 + $n2 = $soma")
+        fun soma(n1: Double, n2: Double): Double {
+            //val soma = n1 + n2
+            //println("$n1 + $n2 = $soma")
+            return n1 + n2
         }
 
         fun sub(n1: Double, n2: Double) {
@@ -17,9 +18,10 @@ class Calculadora() {
             println("$n1 - $n2 = $sub")
         }
 
-        fun mult(n1: Double, n2: Double) {
-            val mult = n1 * n2
-            println("$n1 * $n2 = $mult")
+        fun mult(n1: Double, n2: Double): Double {
+            //val mult = n1 * n2
+            //println("$n1 * $n2 = $mult")
+            return n1 * n2
         }
 
         fun divisao(n1: Double, n2: Double) {
